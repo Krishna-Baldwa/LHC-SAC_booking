@@ -1,0 +1,21 @@
+.Requests {
+    padding-top: 20px;
+}
+.Requests caption {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+    font-style:initial;
+    color: indigo;
+    text-decoration: underline;
+}
+.table-info th{
+    text-align: center;
+}
+.Requests tr{
+    text-align: center;
+    font-weight: 500;
+}
+.table-info button{
+    padding-left: 2px;
+}

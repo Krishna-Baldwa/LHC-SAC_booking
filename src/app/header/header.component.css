@@ -1,0 +1,23 @@
+.navbar-logo img {
+    width:70px;
+    height: 70px;
+    padding: 5px;
+}
+.navbar {
+    flex-wrap: nowrap;
+}
+.btn-group{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+}
+.Welcome-msg{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 300;
+    font-style: oblique;
+}
+.dropdown-item:hover{
+    background-color:grey;
+    cursor: pointer;
+}
