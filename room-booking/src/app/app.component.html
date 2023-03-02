@@ -9,14 +9,14 @@
         <a class="nav-link" href="#">Profile</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Login</a>
+        <a class="nav-link" routerLink="login">Login</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Booking
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Add booking</a>
+          <a class="dropdown-item" routerLink="booking">Add booking</a>
           <a class="dropdown-item" href="#">Past bookings</a>
         </div>
       </li>
@@ -24,3 +24,4 @@
   </div>
 </nav>
 <app-home-page-cards></app-home-page-cards>
+<router-outlet></router-outlet>
