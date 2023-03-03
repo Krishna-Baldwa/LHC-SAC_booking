@@ -25,8 +25,12 @@
         <td>{{ request.End_Time }}</td>
         <td>{{ request.Room }}</td>
         <td>
-          <button class="btn btn-success">Accept</button>&nbsp;
-          <button class="btn btn-danger">Reject</button>
+          <button class="btn btn-success my-1 mx-1" (click)="Isaccepted(true)">
+            Accept
+          </button>
+          <button class="btn btn-danger" (click)="Isaccepted(false)">
+            Reject
+          </button>
         </td>
       </tr>
     </tbody>
