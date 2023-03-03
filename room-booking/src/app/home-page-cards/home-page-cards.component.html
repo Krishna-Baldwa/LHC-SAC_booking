@@ -1,4 +1,4 @@
-<div class="full">
+<!-- <div class="full">
 <div class="container">
     <div class="row">
         <div *ngFor="let isrc of image_sources" class="col-lg-3">
@@ -17,4 +17,24 @@
         </div>
     </div>
 </div>
-</div>
+</div> -->
+<div class="full">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let isrc of image_sources" class="col-lg-3">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src={{isrc[0]}} alt="Avatar" style="width:100%;height:100%;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>{{isrc[1]}}</h1>
+                        <!-- <p>Capacity</p>
+                        <p>rules</p> -->
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
