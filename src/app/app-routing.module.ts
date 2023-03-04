@@ -5,7 +5,7 @@ import { HomePageCardsComponent } from './home-page-cards/home-page-cards.compon
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'home'},
+  {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component:HomePageCardsComponent},
   {path:'booking', component:BookingComponent},
   {path:'login', component:LoginComponent}
