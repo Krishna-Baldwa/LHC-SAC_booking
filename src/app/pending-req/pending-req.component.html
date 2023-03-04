@@ -1,0 +1,38 @@
+<div class="Requests">
+  <table class="table table-hover table-bordered caption-top">
+    <caption>
+      Pending Requests
+    </caption>
+    <thead class="table-info">
+      <tr>
+        <th scope="col">S No</th>
+        <th scope="col">Council</th>
+        <th scope="col">Reason</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Start Time</th>
+        <th scope="col">End Time</th>
+        <th scope="col">Room</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let request of requests">
+        <th scope="row">{{ request.S_No }}</th>
+        <td>{{ request.Council }}</td>
+        <td>{{ request.Reason }}</td>
+        <td>{{ request.Contact }}</td>
+        <td>{{ request.Start_Time }}</td>
+        <td>{{ request.End_Time }}</td>
+        <td>{{ request.Room }}</td>
+        <td>
+          <button class="btn btn-success my-1 mx-1" (click)="Isaccepted(true)">
+            Accept
+          </button>
+          <button class="btn btn-danger" (click)="Isaccepted(false)">
+            Reject
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
