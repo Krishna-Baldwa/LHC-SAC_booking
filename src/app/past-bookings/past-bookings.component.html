@@ -1,0 +1,43 @@
+<div class="navbar navbar-light bg-primary">
+  <div class="navbar-logo">
+    <img src="assets/image/logo.jpg" alt="Logo" />
+  </div>
+  <div class="container-fluid">
+    <h2>Room Booking Management System</h2>
+  </div>
+  <h4 class="home-link">Home</h4>
+</div>
+<div class="Welcome-msg">
+  <h3>You can view your Past Bookings here!!</h3>
+</div>
+<div class="Requests">
+  <table class="table table-hover table-bordered caption-top">
+    <caption>
+      Past Bookings
+    </caption>
+    <thead class="table-info">
+      <tr>
+        <th scope="col">S No</th>
+        <th scope="col">Council</th>
+        <th scope="col">Reason</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Start Time</th>
+        <th scope="col">End Time</th>
+        <th scope="col">Room</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let data of datas">
+        <th scope="row">{{ data.S_No }}</th>
+        <td>{{ data.Council }}</td>
+        <td>{{ data.Reason }}</td>
+        <td>{{ data.Contact }}</td>
+        <td>{{ data.Start_Time }}</td>
+        <td>{{ data.End_Time }}</td>
+        <td>{{ data.Room }}</td>
+        <td>{{ data.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

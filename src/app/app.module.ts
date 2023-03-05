@@ -8,7 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { BookingComponent } from './booking/booking.component';
 import { HeaderComponent } from './header/header.component';
 import { PendingReqComponent } from './pending-req/pending-req.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { PastBookingsComponent } from './past-bookings/past-bookings.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {HttpClientModule} from '@angular/common/http'
     LoginComponent,
     BookingComponent,
     HeaderComponent,
-    PendingReqComponent
+    PendingReqComponent,
+    PastBookingsComponent
   ],
   imports: [
     BrowserModule,
