@@ -9,6 +9,6 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   constructor(private router: Router){}
   logout(){
-    this.router.navigate([''])//Add the url of login page to direct the admin there on clicking logout.
+    this.router.navigate(['login'])//Add the url of login page to direct the admin there on clicking logout.
   }
 }
